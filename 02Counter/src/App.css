@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.counter-app-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.counter-app-heading {
+    text-align: center;
+    background-color: black;
+    color: #ffff;
+    width: 190px;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+/* .counter-app-text {
+    text-align: center;
+} */
+
+.btn {
+    margin-right: 6px;
+    background-color: #f3f3f3;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dcdcdc;
+}
+
