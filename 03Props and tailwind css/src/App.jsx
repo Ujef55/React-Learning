@@ -1,9 +1,8 @@
 function App() {
-
   return (
-    <div className='flex justify-center items-center h-screen'>
-      <h1 className='bg-blue-400 text-white p-4 m-4 text-center w-32 rounded-xl'>Tailwind CSS</h1>
-    </div>
+    <>
+      <h1 class="text-4xl bg-blue-400 m-5 p-5 w-72 rounded-xl shadow-xl mx-auto text-center">Tailwind CSS</h1>
+    </>
   );
 }
 
