@@ -31,6 +31,12 @@ function App() {
     randomPassword();
   }, [length, numberAllowed, charAllowed]);
 
+  const copyHandler = () => {
+    const text = document.getElementById('inputText');
+    text.select();
+    navigator.clipboard.writeText(text.value);
+  }
+
   return (
     <div className="bg-black w-full h-screen flex flex-col justify-center items-center">
       <h1 className="text-white text-2xl text-center p-6">
@@ -40,12 +46,13 @@ function App() {
         <div className="flex items-center">
           <input
             type="text"
+            id="inputText"
             value={password}
             className="outline-none w-full py-1 px-3"
             placeholder="Password"
             readOnly
           />
-          <button className="outline-none bg-blue-700 text-white py-1 px-3">
+          <button onClick={copyHandler} className="outline-none bg-blue-700 text-white py-1 px-3">
             Copy
           </button>
         </div>
